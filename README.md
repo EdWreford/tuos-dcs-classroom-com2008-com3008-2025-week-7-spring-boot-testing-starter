@@ -2,8 +2,7 @@
 
 ## Code from end of Week 6 Lab
 
- - This project contains code from the end of week 6 lab.
- - If you are downloading this because you didn't get the work done by the end of week 6, please ensure that you go through the lab materials and that you understand how it has been made.
+ - This project contains code from the end of week 6 lab for the use in the week 7 material.
 
 ### Create a public/private key-pair
 
