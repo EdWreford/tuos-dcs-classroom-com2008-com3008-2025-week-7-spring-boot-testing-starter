@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class DataExampleApplication {
 
 
     @Bean
+    @Profile("!test")
     public CommandLineRunner commandLineRunner(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         return args -> {
             userRepository.save(new User("user1", passwordEncoder.encode("password"), Authorities.ROLE_USER));
